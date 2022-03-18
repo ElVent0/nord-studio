@@ -8,6 +8,7 @@ body {
   height: 100%;
   margin: 0 auto;
   display: block;
+  background: #2c2c2c;
 }
 
 ul {
@@ -38,7 +39,7 @@ header
 .a-first {
   text-decoration: none;
   color: white;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 400;
   margin: 0;
   padding: 0 40px 0 40px;
@@ -124,4 +125,140 @@ section 2
   height: 900px;
   overflow: hidden;
   background: url("../images/bg5.jpg") no-repeat center;
+}
+
+.div-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 300px 0 0 0;
+}
+
+.div-2-1 {
+  padding: 0 0 0 162px;
+}
+
+.p2-1 {
+  padding: 0 162px 0 0;
+  color: white;
+  font-size: 24px;
+}
+
+.ul2-1 {
+  padding: 0 162px 0 20px;
+  color: white;
+  font-size: 24px;
+  list-style-type: circle;
+}
+
+.img-2-1 {
+  width: 600px;
+  transition: 0.5s ease-in-out;
+}
+
+.img-2-1:hover {
+  width: 650px;
+}
+
+.div2-2 {
+  width: 800px;
+}
+
+/* 
+section 3
+ */
+
+.section-third {
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  background: url("../images/bg2.jpg") no-repeat center;
+}
+
+.h {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.ul-3-1 {
+  display: flex;
+  justify-content: space-between;
+  margin: 120px 70px 0 70px;
+  padding: 0;
+}
+
+.b-1,
+.b-2,
+.b-3 {
+  background: #fff;
+  width: 470px;
+  height: 40px;
+  margin-top: 40px;
+  border-radius: 8px;
+  transition: 0.3s ease-in-out;
+}
+
+.b-1:hover,
+.b-2:hover,
+.b-3:hover {
+  background: rgb(212, 212, 212);
+  width: 470px;
+  height: 40px;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+.p-3-1 {
+  color: #2c2c2c;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.br-3-1 {
+  border-radius: 10px;
+  opacity: 100%;
+  -webkit-filter: none;
+  filter: none;
+  -webkit-filter: brightness(0.4);
+  filter: brightness(0.4);
+  transition: 0.3s ease-in-out;
+}
+
+.br-3-1:hover {
+  border-radius: 10px;
+  opacity: 100%;
+  font-size: 30px;
+  font-weight: 700;
+  opacity: 100%;
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
+}
+
+.a-3-1 {
+  text-decoration: none;
+}
+
+/* 
+section 4
+ */
+
+.section-fourth {
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  background: url("../images/bg3.jpg") no-repeat center;
+}
+
+/* 
+section 5
+ */
+
+.section-fifth {
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  background: url("../images/bg4.jpg") no-repeat center;
 }
