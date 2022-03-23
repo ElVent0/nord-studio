@@ -138,24 +138,25 @@ section 2
 .div-2 {
   display: flex;
   justify-content: space-between;
-  padding: 300px 0 0 0;
+  padding: 120px 0 0 0;
 }
 
 .div-2-1 {
-  padding: 0 0 0 162px;
+  padding: 230px 0 0 162px;
 }
 
 .p2-1 {
   padding: 0 162px 0 0;
   color: #2c2c2c;
-  font-size: 24px;
+  font-size: 32px;
+  font-weight: 700;
 }
 
 .ul2-1 {
-  padding: 0 162px 0 20px;
+  padding: 0 162px 0 0px;
   color: #2c2c2c;
   font-size: 24px;
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 .img-2-1 {
@@ -173,6 +174,38 @@ section 2
 
 .ul2-1 > li {
   color: #2c2c2c;
+}
+
+.li-2-1 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 530px;
+}
+
+.li-2-2 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  width: 530px;
+}
+
+.p-2-2 {
+  background-color: #e7e7e7;
+  padding: 10px 24px;
+  font-size: 18px;
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 15px 20px 15px 20px;
+  font-size: 20px;
+}
+
+summary:hover {
+  font-weight: 700;
+  cursor: pointer;
 }
 
 /* 
@@ -235,8 +268,8 @@ section 3
   opacity: 100%;
   -webkit-filter: none;
   filter: none;
-  -webkit-filter: brightness(0.4);
-  filter: brightness(0.4);
+  -webkit-filter: brightness(1);
+  filter: brightness(1);
   transition: 0.3s ease-in-out;
 
   border-radius: 10px 10px 0px 0px;
@@ -247,8 +280,8 @@ section 3
   font-size: 30px;
   font-weight: 700;
   opacity: 100%;
-  -webkit-filter: brightness(1);
-  filter: brightness(1);
+  -webkit-filter: brightness(0.6);
+  filter: brightness(0.6);
 }
 
 .a-3-1 {
@@ -305,6 +338,7 @@ section 4
   font-size: 20px;
   text-align: right;
   padding: 60px 40px 0px 0px;
+  transition: 0.3s;
 }
 
 .p-4-1-2 {
@@ -312,6 +346,31 @@ section 4
   font-size: 20px;
   text-align: left;
   padding: 60px 0px 0px 40px;
+  transition: 0.3s;
+}
+
+.img-4-1 {
+  width: 300px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.img-4-1:hover {
+  transform: scale(1.5);
+}
+
+.img-div {
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.img-div-1 {
+  border-radius: 0 10px 10px 0;
+}
+
+.img-div-2 {
+  border-radius: 10px 0 0 10px;
 }
 
 .span-1 {
@@ -323,11 +382,23 @@ section 4
 .div-4-3 {
   background-color: #fff;
   width: 320px;
+
+  transition: 0.3s;
 }
 
 .div-4-4 {
   background-color: #00fff0;
   width: 300px;
+
+  transition: 0.3s;
+}
+
+.br-4-3 {
+  border-radius: 0 10px 10px 0;
+}
+
+.br-4-4 {
+  border-radius: 10px 0 0 10px;
 }
 
 .div-4-0 {
@@ -337,21 +408,22 @@ section 4
 }
 
 .p-4-2 {
-  padding: 5px 30px;
+  padding: 10px 30px;
   text-align: right;
   font-weight: 900;
   font-size: 30px;
   margin: 0;
-  color: #2c2c2c;
+  color: #fff;
 }
 
 .p-4-3 {
-  padding: 5px 30px;
+  padding: 10px 30px;
   font-weight: 900;
   font-size: 30px;
   margin: 0;
-  color: #2c2c2c;
+  color: #fff;
 }
+
 /* 
 section 5
  */
