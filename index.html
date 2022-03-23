@@ -193,7 +193,7 @@
               Заповнюйте бриф за посиланням та моментально отримуйте лист на вашу адресу з оцінкою вартості та термінів виконання замовлення
               <br /><br />Наш поштовий бот <span>VIKING</span> працює цілодобово  
             </p>
-            <a href="" class="a-second">ЗАПОВНИТИ БРИФ</a>
+            <a href="#openModal" class="a-second">ЗАПОВНИТИ БРИФ</a>
           </div>
           <div class="div-third">
             <img
@@ -201,6 +201,56 @@
               alt="ілюстрація процесу розробки"
               class="img-first-2"
             />
+          </div>
+        </div>
+        <div id="openModal" class="modal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <a href="#close" title="Close" class="close">×</a>
+                <p style="margin-top: 40px" class="p-5-1">
+                <b>Надайте, будь ласка, наступну інформацію для розрахунку вартості</b><br>
+                </p>
+                <ul class="ul-5-1">
+                  <li class="li-5-1">
+                <p>Ваше ПІБ:</p>
+                <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                required
+                minlength="4"
+                maxlength="40"
+                size="30"
+              />
+              </li>
+              <li class="li-5-1">
+                <p>Ваша електронна адреса:</p>
+                <input
+                class="input"
+                type="email"
+                id="email"
+                pattern=".+@globex\.com"
+                size="30"
+                required
+              /></li>
+              <li class="li-5-1">
+                <p>Кількість сторінок сайту:</p>
+                <input type="number" step="1" min="1" max="10" value="1" id="pages" name="pages"/>
+                </li>
+                <li class="li-5-1">
+                <p>Тип сайту:</p>
+                <select name="" id="">
+                  <option value="">Шаблонний</option>
+                  <option value="">Персоналізований</option>
+                </select>
+                </li>
+                </ul><br>
+                <button type="submit" class="btn">Надіслати дані</button><br>
+
+              </div>
+            </div>
           </div>
         </div>
       </section>
