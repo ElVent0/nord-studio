@@ -520,7 +520,7 @@ section 5
   color: #666;
   position: relative;
   width: auto;
-  margin: 1% 30%;
+  margin: 0.5% 30%;
   border-radius: 10px;
 }
 
@@ -635,4 +635,11 @@ b {
 
 .p-5-1 {
   padding: 20px 0 20px 50px;
+}
+
+input {
+  border-radius: 20px;
+  border: solid 1px;
+  text-align: left;
+  padding: 5px 0 5px 20px;
 }
