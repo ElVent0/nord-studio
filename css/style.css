@@ -1,3 +1,7 @@
+:root {
+  --color-main: #00fff0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -47,7 +51,7 @@ header
 }
 
 .a-first:hover {
-  color: #00fff0;
+  color: var(--color-main);
 }
 
 .ul-first {
@@ -60,7 +64,7 @@ header
 }
 
 span {
-  color: #00fff0;
+  color: var(--color-main);
 }
 
 /* 
@@ -386,7 +390,7 @@ section 4
 }
 
 .div-4-4 {
-  background-color: #00fff0;
+  background-color: var(--color-main);
   width: 350px;
 
   transition: 0.3s;
@@ -487,7 +491,7 @@ section 5
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background: #00fff0;
+  background: var(--color-main);
 }
 
 /*Модальне вікно*/
