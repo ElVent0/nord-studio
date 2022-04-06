@@ -93,7 +93,7 @@ section 1
 
 .section-first {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 120px);
   overflow: hidden;
   background-image: url("../images/bg1.jpg");
   background-repeat: no-repeat;
@@ -107,6 +107,10 @@ section 1
   display: flex;
   justify-content: space-between;
   padding: 0px 0 0 0;
+}
+
+.section-fifth-one {
+  margin-top: 90px;
 }
 
 .div-third {
@@ -175,6 +179,19 @@ section 1
 /* 
 section 2
  */
+
+.hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin-top: -100px;
+}
 
 .section-second {
   width: 100%;
