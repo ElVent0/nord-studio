@@ -316,14 +316,6 @@ section 3
   border-radius: 0px 0px 10px 10px;
 }
 
-.b-1:hover,
-.b-2:hover,
-.b-3:hover {
-  background: rgb(212, 212, 212);
-  width: 470px;
-  height: 40px;
-}
-
 .p-3-1 {
   color: #2c2c2c;
   font-size: 20px;
@@ -341,6 +333,7 @@ section 3
   transition: 0.3s ease-in-out;
 
   border-radius: 10px 10px 0px 0px;
+  display: block;
 }
 
 .br-3-1:hover {
