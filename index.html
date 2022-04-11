@@ -2,12 +2,20 @@
 <html lang="uk">
   <head>
     <title>NordStudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,235 +24,302 @@
     />
   </head>
   <body>
-    <div class="all">
+    <!-- header -->
     <header class="header">
-      <nav class="nav">
-        <ul class="ul-first">
-          <li><a href="#services" class="a-first ul-second">Послуги</a></li>
-          <li><a href="#portfolio" class="a-first ul-second">Портфоліо</a></li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" class="logo"
-              ><img src="./images/logo2.png" alt="Логотип" width="150px"
-            /></a>
-          </li>
-        </ul>
-        <ul class="ul-first">
-          <li><a href="#price" class="a-first ul-second">Вартість</a></li>
-          <li><a href="#contacts" class="a-first ul-second">Контакти</a></li>
-        </ul>
-      </nav>
+      <div class="container">
+        <nav class="header__navigation">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#about-us" class="header__link">Послуги</a>
+            </li>
+            <li class="header__item">
+              <a href="#portfolio" class="header__link">Портфоліо</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">
+                <img
+                  src="./images/logo2.png"
+                  alt="Логотип"
+                  class="header__logo"
+                  width="128"
+                />
+              </a>
+            </li>
+            <li class="header__item">
+              <a href="#price" class="header__link">Вартість</a>
+            </li>
+            <li class="header__item">
+              <a href="#contacts" class="header__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-
-<a href="" class="support-ua">
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-  <p>Практична робота </p>
-</a>
-    
-    <main>
-      <!-----
-      Секція 1
-      ----->
-      <section class="section-first" id="studio">
-        <div class="div-first">
-          <div class="div-second">
-            <p class="p-first">
-              <span>Nord Studio</span> - розробники, що вміють читати думки<br /><br />Команда
-              сертифікованих спеціалістів виконає ваше замовлення якісно та
-              швидко
-            </p>
-            <div>
-            <a href="#price" class="a-second">ЗАМОВИТИ ПОСЛУГУ</a>
-            <a href="#openModal-gu" class="a-second third">СЛАВА УКРАЇНІ</a>
-          </div>
-          </div>
-          <div class="div-third">
+    <main class="main">
+      <!-- hero -->
+      <section class="hero hero__background">
+        <div class="hero__line">
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+          <p class="hero__line-paragraph">Слава Україні</p>
+        </div>
+        <div class="">
+          <div class="container hero__container">
+            <div class="hero__text-content">
+              <h1 class="hero__title">
+                <span class="blue">Nord Studio</span> - розробники, що вміють
+                читати думки
+              </h1>
+              <p class="hero__paragraph">
+                Команда сертифікованих спеціалістів виконає ваше замовлення
+                якісно та швидко
+              </p>
+              <div class="hero__buttons">
+                <a href="#price" class="hero__button button__left"
+                  >ЗАМОВИТИ ПОСЛУГУ</a
+                >
+                <a href="#openModal-gu" class="hero__button button__right">СЛАВА УКРАЇНІ</a>
+              </div>
+            </div>
             <img
               src="./images/p0-3.png"
-              alt="ілюстрація процесу розробки"
-              class="img-first"
+              alt="Ілюстрація розробки"
+              class="hero__image"
+              width="600"
             />
           </div>
         </div>
         <div id="openModal-gu" class="modal">
           <div class="modal-dialog">
             <div class="modal-content top">
-              <div class="modal-body">
-                <img src="./images/vg.jpg" width="90%" alt="Героям Слава!" class="mw">
-                <a type="submit" class="btn" href="#close" title="Поставте 100 балів" class="close">Героям Слава!</a><br>
+              <div class="modal-body modal-body__top">
+                <img src="./images/vg.jpg" width="90%" alt="Героям Слава!" class="modal__image">
+                <a type="submit" class="modal__button" href="#close" title="Поставте 100 балів" class="close">Героям Слава!</a><br>
 
               </div>
             </div>
           </div>
         </div>
       </section>
-      <!-----
-      Секція 2
-      ----->
-      <section class="section-second">
-        <div class="hidden" id="services"></div>
-        <div class="div-2">
-          <div class="div-2-1">
-            <img src="./images/logo3.png" alt="логотип" class="img-2-1" />
-          </div>
-          <div class="div2-2">
-            <p class="p2-1">
+      <!-- about-us -->
+      <div class="dot__nav" id="about-us"></div>
+      <section class="about-us">
+        <div class="container">
+          <div class="about-us__content">
+            <h2 class="about-us__title">
               Замовивши розробку вашого веб-сайту в нас ви отримаєте:
-            </p>
-            <ul class="ul2-1">
-              <li class="li-2-1">
-                <details open>
-                  <summary>&nbsp&nbsp Дизайн сайту</summary>
-                <p class="p-2-2">Наш UX/UI дизайнер запропонує вам ідеальний дизайн для вашої аудиторії</p></details></li>
-              <li class="li-2-1"><details class="details1"><summary>&nbsp&nbsp Розробку сайту</summary>
-                <p class="p-2-2">Наші спеціалісти напишуть ваш сайт з використанням найсучасніших методів розробки</p></details></li>
-              <li class="li-2-1"><details><summary>&nbsp&nbsp SEO оптимізацію сайту</summary>
-                <p class="p-2-2">Наш SEO-спеціаліст запропонує найефективнішу стратегію просування</p></details></li>
-              <li class="li-2-1"><details><summary>&nbsp&nbsp Посадку сайту на CMS</summary>
-                <p class="p-2-2">Для зручності керування контентом ми посадимо ваш сайт на найсучаснішу CMS</p></details></li>
-              <li class="li-2-1"><details><summary>&nbsp&nbsp Наступний супровід сайту</summary>
-                <p class="p-2-2">Завжди будемо раді продовжити співпрацю</p></details></li>
-              <li class="li-2-2"><details><summary>&nbsp&nbsp Анекдот від Павла</summary>
-                <p class="p-2-2">... або в бубен від Василя</p></details></li>
+            </h2>
+            <ul class="about-us__list">
+              <li class="about-us__item">
+                <details open class="about-us__details">
+                  <summary class="about-us__summary">&nbsp&nbsp Дизайн сайту</summary>
+                  <p class="about-us__paragraph">
+                    Наш UX/UI дизайнер запропонує вам ідеальний дизайн для вашої
+                    аудиторії
+                  </p>
+                </details>
+              </li>
+              <li class="about-us__item">
+                <details class="about-us__details">
+                  <summary class="about-us__summary">&nbsp&nbsp Розробку сайту</summary>
+                  <p class="about-us__paragraph">
+                    Наші спеціалісти напишуть ваш сайт з використанням
+                    найсучасніших методів розробки
+                  </p>
+                </details class="about-us__details">
+              </li>
+              <li class="about-us__item">
+                <details class="about-us__details">
+                  <summary class="about-us__summary">&nbsp&nbsp SEO оптимізацію сайту</summary>
+                  <p class="about-us__paragraph">
+                    Наш SEO-спеціаліст запропонує найефективнішу стратегію
+                    просування
+                  </p>
+                </details>
+              </li>
+              <li class="about-us__item">
+                <details class="about-us__details">
+                  <summary class="about-us__summary">&nbsp&nbsp Посадку сайту на CMS</summary>
+                  <p class="about-us__paragraph">
+                    Для зручності керування контентом ми посадимо ваш сайт на
+                    найсучаснішу CMS
+                  </p>
+                </details>
+              </li>
+              <li class="about-us__item">
+                <details class="about-us__details">
+                  <summary class="about-us__summary">&nbsp&nbsp Наступний супровід сайту</summary>
+                  <p class="about-us__paragraph">
+                    Завжди будемо раді продовжити співпрацю
+                  </p>
+                </details>
+              </li>
+              <li class="about-us__item">
+                <details class="about-us__details">
+                  <summary class="about-us__summary">&nbsp&nbsp Анекдот від Павла</summary>
+                  <p class="about-us__paragraph">... або в бубен від Василя</p>
+                </details>
+              </li>
             </ul>
           </div>
         </div>
       </section>
-      <!-----
-      Секція 3
-      ----->
-      <section class="section-third" id="portfolio">
-        <h2 class="h">Портфоліо</h2>
-        <ul class="ul-3-1">
-          <li>
-            <a
-              href="https://elvent0.github.io/FrecsChessClub/"
-              target="_blank"
-              class="a-3-1"
-              ><img
-                src="./images/s1.jpg"
-                alt="зразок сайту 1"
-                width="470"
-                class="br-3-1"
-              />
-              <div class="b-1"><p class="p-3-1">FRECS ChessClub</p></div></a
-            >
-          </li>
-          <li>
-            <a href="" class="a-3-1" target="_blank"
-              ><img
-                src="./images/s2.jpg"
-                alt="зразок сайту 2"
-                width="470"
-                class="br-3-1"
-              />
-              <div class="b-2"><p class="p-3-1">Ukraine</p></div></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://elvent0.github.io/KNUgle/"
-              class="a-3-1"
-              target="_blank"
-              ><img
-                src="./images/s3.jpg"
-                alt="зразок сайту 3"
-                width="470"
-                class="br-3-1"
-              />
-              <div class="b-3"><p class="p-3-1">KNUgle</p></div></a
-            >
-          </li>
-        </ul>
+      <!-- portfolio -->
+      <div class="dot__nav" id="portfolio"></div>
+      <section class="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title">Портфоліо</h2>
+          <ul class="portfolio__list">
+            <li class="portfolio__item">
+              <a href="https://elvent0.github.io/FrecsChessClub/" target="_blank" class="portfolio__link">
+                <img
+                  src="./images/s1.jpg"
+                  alt="Сайт шахового клубу"
+                  class="portfolio__image"
+                  width="420"
+                />
+                <p class="portfolio__description">FRECS ChessClub</p>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="https://elvent0.github.io/2022/" target="_blank" class="portfolio__link">
+                <img
+                  src="./images/s2.jpg"
+                  alt="Сайт про Україну"
+                  class="portfolio__image"
+                  width="420"
+                />
+                <p class="portfolio__description">Ukraine</p>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="https://elvent0.github.io/KNUgle/" target="_blank" class="portfolio__link">
+                <img
+                  src="./images/s3.jpg"
+                  alt="Сайт-шпаргалка"
+                  class="portfolio__image"
+                  width="420"
+                />
+                <p class="portfolio__description">KNUgle</p>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="https://elvent0.github.io/Practice/" target="_blank" class="portfolio__link">
+                <img
+                  src="./images/s4.jpg"
+                  alt="Сайт"
+                  class="portfolio__image"
+                  width="420"
+                />
+                <p class="portfolio__description">Practica V1.0</p>
+              </a>
+            </li>
+            <li class="portfolio__item">
+              <a href="https://elvent0.github.io/nordstudio/" target="_blank" class="portfolio__link">
+                <img
+                  src="./images/s5.jpg"
+                  alt="Сайт"
+                  class="portfolio__image"
+                  width="420"
+                />
+                <p class="portfolio__description">NordStudio</p>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
-      <!-----
-      Секція 4
-      ----->
-      <section class="section-fourth">
-        <h2 class="h2">Наша команда</h2>
-        <ul class="ul-4-1">
-          <li class="li-4-1">
-            <div class="div-4-1">
-              <div class="div-4-2 br-4-4">
-                <p class="p-4-1-1">
-                  <span class="span-1">ТАРАСЮК Василь</span><br /><br />UX/UI
-                  дизайн<br />Фронт-Енд<br />Тестування<br />Деплой
-                </p>
+      <!-- team -->
+      <section class="team">
+        <div class="container">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__item_left">
+              <div class="team__part_top">
+                <div class="team__developer team__developer_left">
+                  <h3 class="team__name">Тарасюк Василь</h3>
+                  <ul class="team__skills">
+                    <li class="team__skills-item">Дизайн</li>
+                    <li class="team__skills-item">Фронт-Енд</li>
+                    <li class="team__skills-item">Тестування</li>
+                    <li class="team__skills-item">Деплой</li>
+                  </ul>
+                </div>
+                <div class="team__developer_image">
+                  <img
+                    src="./images/p1.jpg"
+                    alt="Тарасюк Василь"
+                    class="team__image team__image_left"
+                    width="300"
+                  />
+                </div>
               </div>
-              <div class="img-div img-div-1">
-                <img src="./images/p1.jpg" alt="розробник 1" class="img-4-1 br-4-3" />
+              <div class="team__part_bottom">
+                <div class="team__percent"></div>
+                <div class="team__percent_number">50%</div>
               </div>
-            </div>
-            <div class="div-4-0">
-              <div class="div-4-3 br-4-4"></div>
-              <div class="div-4-4 br-4-3">
-                <p class="p-4-2">50%</p>
+            </li>
+            <li class="team__item_right">
+              <div class="team__part_top">
+                <div class="team__developer_image">
+                  <img
+                    src="./images/p2.jpg"
+                    alt="Тарасюк Василь"
+                    class="team__image team__image_rigth"
+                    width="300"
+                  />
+                </div>
+                <div class="team__developer team__developer_right">
+                  <h3 class="team__name">Середюк Павло</h3>
+                  <ul class="team__skills">
+                    <li class="team__skills-item">Бек-Енд</li>
+                    <li class="team__skills-item">Бази даних</li>
+                    <li class="team__skills-item">Тестування</li>
+                    <li class="team__skills-item">Деплой</li>
+                  </ul>
+                </div>
               </div>
-            </div>
-          </li>
-          <li>
-            <div class="div-4-1">
-              <div class="img-div img-div-2">
-                <img src="./images/p2.jpg" alt="розробник 2" class="img-4-1 br-4-4" />
+              <div class="team__part_bottom">
+                <div class="team__percent_number__rigth">50%</div>
+                <div class="team__percent"></div>
               </div>
-              <div class="div-4-2 br-4-3">
-                <p class="p-4-1-2">
-                  <span class="span-1">СЕРЕДЮК Павло</span
-                  ><br /><br />Бек-Енд<br />Бази даних<br />Тестування<br />Деплой
-                </p>
-              </div>
-            </div>
-            <div class="div-4-0">
-              <div class="div-4-4 br-4-4">
-                <p class="p-4-3">50%</p>
-              </div>
-              <div class="div-4-3 br-4-3"></div>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <div class="dot dot__left"></div>
+            <div class="dot dot__right"></div>
+          </ul>
+        </div>
       </section>
-      <!-----
-      Секція 5
-      ----->
-      <section class="section-fifth" id="price">
-        <div class="section-fifth-one">
-        <div class="div-first">
-          <div class="div-second">
-            <p class="p-first">
-              Заповнюйте бриф за посиланням та моментально отримуйте лист на вашу адресу з оцінкою вартості та термінів виконання замовлення
-              <br /><br />Наш поштовий бот <span>VIKING</span> працює цілодобово  
-            </p>
-            <a href="#openModal" class="a-second">ЗАПОВНИТИ БРИФ</a>
-          </div>
-          <div class="div-third">
-            <img
-              src="./images/p3.png"
-              alt="ілюстрація процесу розробки"
-              class="img-first-2"
-            />
-          </div>
+      <!-- price -->
+      <section class="price" id="price">
+        <div class="container">
+          <p class="price__paragraph">
+            Заповнюйте бриф за посиланням та моментально отримуйте лист на вашу
+            адресу з оцінкою вартості та термінів виконання замовлення
+          </p>
+          <p class="price__paragraph price__paragraph_end">
+            Наш поштовий бот <span class="blue">VIKING</span> працює цілодобово
+          </p>
+          <a href="#openModal" class="price__button">ЗАПОВНИТИ БРИФ</a>
         </div>
         <div id="openModal" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body">
+          <div class="modal-dialog ">
+            <div class="modal-content ">
+              <div class="modal-body modal-body__bottom">
                 <a href="#close" title="Close" class="close">×</a>
-                <p style="margin-top: 40px" class="p-5-1">
+                <p style="margin-top: 40px" class="modal__paragraph">
                 <b>Надайте, будь ласка, наступну інформацію для розрахунку вартості</b><br>
                 </p>
-                <ul class="ul-5-1">
-                  <li class="li-5-1">
-                <p>Ваше ПІБ:</p>
+                <ul class="modal__list">
+                  <li class="modal__item">
+                <p class="modal__item_paragraph">Ваше ПІБ:</p>
                 <input
-                class="input"
+                class="modal__input"
                 type="text"
                 id="name"
                 name="name"
@@ -254,47 +329,55 @@
                 size="30"
               />
               </li>
-              <li class="li-5-1">
-                <p>Ваша електронна адреса:</p>
+              <li class="modal__item">
+                <p class="modal__item_paragraph">Ваша електронна адреса:</p>
                 <input
-                class="input"
+                class="modal__input"
                 type="email"
                 id="email"
                 pattern=".+@globex\.com"
                 size="30"
                 required
               /></li>
-              <li class="li-5-1">
-                <p>Кількість сторінок сайту:</p>
+              <li class="modal__item">
+                <p class="modal__item_paragraph">Кількість сторінок сайту:</p>
                 <input type="number" step="1" min="1" max="10" value="1" id="pages" name="pages"/>
                 </li>
-                <li class="li-5-1">
-                <p>Тип сайту:</p>
+                <li class="modal__item">
+                <p class="modal__item_paragraph">Тип сайту:</p>
                 <select name="" id="">
                   <option value="">Шаблонний</option>
                   <option value="">Персоналізований</option>
                 </select>
                 </li>
                 </ul><br>
-                <button type="submit" class="btn">Надіслати дані</button><br>
-
+                <button type="submit" class="modal__button">Надіслати дані</button><br>
               </div>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer id="contacts">
-      <div class="footer">
-        <div><img class="footer-img" src="./images/logo2.png" alt="лого" width="150"></div>
-        <address>
-          <ul>
-            <li class="footer-li"><a class="footer-a" href="mailto:">mail1@knu.ua</a></li>
-            <li class="footer-li"><a class="footer-a" href="mailto:">mail2@knu.ua</a></li>
-          </ul>
-        </address>
+    <!-- footer -->
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <img
+          src="./images/logo2.png"
+          alt="Логотип"
+          class="footer__logo"
+          width="128"
+        />
+        <div class="footer__contacts_center">
+        <div class="footer__contacts">
+          <a href="mailto:vasyl_tarasyuk@knu.ua" class="footer__link"
+            >vasyl_tarasyuk@knu.ua</a
+          >
+          <a href="mailto:vasyl_tarasyuk@knu.ua" class="footer__link"
+            >vasyl_tarasyuk@knu.ua</a
+          >
+        </div>
+        </div>
       </div>
     </footer>
-    </div>
   </body>
 </html>
