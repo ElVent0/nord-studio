@@ -253,7 +253,7 @@ about-us
 }
 
 .about-us__paragraph {
-  padding: 45px;
+  padding: 30px;
 }
 
 .about-us__details {
@@ -642,6 +642,7 @@ footer
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 15px;
+  padding-bottom: 30px;
   overflow: auto;
 }
 
@@ -650,7 +651,7 @@ footer
 }
 
 .modal-body__bottom {
-  margin-top: 1%;
+  margin-top: 5%;
 }
 
 .modal__button {
@@ -669,7 +670,7 @@ footer
   border-radius: 50px;
   transition: all 0.4s;
   margin: 0 210px;
-  margin-bottom: 20px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -679,7 +680,7 @@ footer
 
 .modal__image {
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 0;
   display: flex;
   justify-content: center;
   border-radius: 10px;
@@ -697,6 +698,7 @@ footer
   padding: 5px 0 20px 30px;
   font-weight: 700;
   background-color: rgb(226, 226, 226);
+  border-radius: 10px;
 }
 
 .modal__list {
@@ -709,13 +711,19 @@ footer
   font-size: 22px;
 }
 
-.input {
-  border-radius: 20px;
-  border: solid 1px;
-  text-align: left;
-  padding: 5px 0 5px 20px;
-}
-
 .modal__item_paragraph {
   padding: 20px 0;
+}
+
+.modal__input {
+  border: none;
+  border-bottom: 1px solid var(--color-bg);
+  background-color: inherit;
+  color: var(--color-text-black);
+  padding: 0 10px;
+}
+
+.modal__input::selection {
+  border: none;
+  border-bottom: 1px solid var(--color-bg);
 }
