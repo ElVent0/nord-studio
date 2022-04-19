@@ -35,6 +35,9 @@
             <li class="header__item">
               <a href="#portfolio" class="header__link">Портфоліо</a>
             </li>
+                        <li class="header__item">
+              <a href="#price" class="header__link">Вартість</a>
+            </li>
             <li class="header__item">
               <a href="#" class="header__link">
                 <img
@@ -45,11 +48,19 @@
                 />
               </a>
             </li>
+              <p class="header__paragraph">Авторизація:</p>
             <li class="header__item">
-              <a href="#price" class="header__link">Вартість</a>
-            </li>
-            <li class="header__item">
-              <a href="#contacts" class="header__link">Контакти</a>
+              
+              <a href="" class="header__link google">
+                <svg width="30" height="30">
+                  <use href="./images/icons.svg#icon-google"></use>
+                </svg>
+              </a>
+              <a href=""  class="header__link facebook">
+                <svg width="30" height="30">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </nav>
@@ -73,6 +84,9 @@
         <div class="">
           <div class="container hero__container">
             <div class="hero__text-content">
+              <p class="hero__paragraph">
+                *Технологічна практика*
+              </p>
               <h1 class="hero__title">
                 <span class="blue">Nord Studio</span> - розробники, що вміють
                 читати думки
@@ -247,7 +261,7 @@
                   <h3 class="team__name">Тарасюк Василь</h3>
                   <ul class="team__skills">
                     <li class="team__skills-item">UI/UX Дизайн</li>
-                    <li class="team__skills-item">Семантична верстка</li>
+                    <li class="team__skills-item">HTML, CSS, JS</li>
                     <li class="team__skills-item">Буде додано пункт*</li>
                     <li class="team__skills-item">Буде додано пункт*</li>
                   </ul>
@@ -340,7 +354,6 @@
                 class="modal__input"
                 type="email"
                 id="email"
-                pattern=".+@globex\.com"
                 size="30"
                 required
               /></li>
@@ -356,8 +369,9 @@
                 </select>
                 </li>
                 </ul>
+                
+                <button type="submit" class="modal__button">Надіслати дані</button>
                 </form>
-                <button type="submit" class="modal__button">Надіслати дані</button><br>
               </div>
             </div>
           </div>
