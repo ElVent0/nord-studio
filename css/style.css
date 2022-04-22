@@ -80,13 +80,13 @@ header
 }
 
 .header__item {
-  margin-right: 50px;
+  margin-right: 20px;
   margin-left: 0;
 }
 
-.header__item:nth-child(4) {
-  position: relative;
-  margin: 0 auto;
+.header__item:first-child {
+  display: flex;
+  margin-right: 40px;
 }
 
 .header__item:last-child {
@@ -94,7 +94,7 @@ header
 }
 
 .header__link {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 38px;
   color: #ffffff;
   display: flex;
@@ -104,9 +104,9 @@ header
 }
 
 .header__paragraph {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 38px;
-  color: #c8c8c8;
+  color: #b5b5b5;
   margin-left: auto;
   margin-right: 30px;
 }
@@ -240,33 +240,38 @@ hero
   color: var(--color-text-black);
   background-color: #fff;
   margin-right: 40px;
-  border: 3px solid transparent;
+  border: 2px solid transparent;
 }
 
 .hero__button.button__right {
   color: #fff;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
 }
 
 .hero__button.button__left:hover {
   color: var(--color-text-black);
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
   margin-right: 40px;
-  border: 3px solid rgb(220, 220, 220);
+  border: 2px solid rgb(240, 240, 240);
 }
 
 .hero__button.button__right:hover {
-  border: 2px solid rgb(220, 220, 220);
+  border: 2px solid rgb(240, 240, 240);
   color: var(--color-text-black);
-  background-color: rgb(220, 220, 220);
+  background-color: rgb(240, 240, 240);
 }
 
 .hero__image {
-  transition: 0.5s;
+  animation: hero-animation 2s infinite alternate ease-in-out;
 }
 
-.hero__image:hover {
-  transform: scale(1.1);
+@keyframes hero-animation {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
 }
 
 /*------------------------------------------
@@ -285,8 +290,8 @@ about-us
 }
 
 .about-us {
-  background-color: #fff;
-  background-image: url(../images/bg2.jpg);
+  background-color: rgb(249, 249, 249);
+  background-image: url(../images/bg2.png);
   background-repeat: no-repeat;
   background-size: 50%;
   height: calc(100vh - 101.58px);
@@ -294,32 +299,39 @@ about-us
 
 .about-us__content {
   padding-left: 60%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+
+  padding-top: 80px;
+  padding-bottom: 20px;
 }
 
 .about-us__title {
   margin-bottom: 50px;
   color: var(--color-text-black);
+  font-weight: 100;
+  font-size: 22px;
 }
 .about-us__list {
   cursor: pointer;
 }
 .about-us__item {
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .about-us__paragraph {
-  padding: 30px;
+  padding: 20px;
+  font-size: 14px;
 }
 
 .about-us__details {
   user-select: none;
+  font-weight: 10px;
+  font-size: 14px;
+  max-width: 510px;
 }
 
 .about-us__summary {
   padding: 20px;
-  background-color: rgb(220, 220, 220);
+  border: 2px rgb(220, 220, 220) solid;
   border-radius: 5px;
 }
 
@@ -328,21 +340,21 @@ portfolio
 ------------------------------------------*/
 
 .portfolio {
-  padding-top: 120px;
-  padding-bottom: 100px;
-  background-image: url(../images/bg4.jpg);
+  background-image: url(../images/bg5.png), url(../images/bg5-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: right bottom, left;
+  background-size: contain;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgb(249, 249, 249);
 }
 
 .portfolio__title {
-  font-weight: 700;
+  font-weight: 100;
   font-size: 36px;
   line-height: 40px;
-  color: #fff;
+  color: var(--color-text-black);
   margin-bottom: 80px;
-  text-align: center;
 }
 
 .portfolio__list {
@@ -355,6 +367,10 @@ portfolio
   width: calc(100% / 3 - 70px);
   margin-left: 70px;
   margin-bottom: 70px;
+  box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
 }
 
 .portfolio__link:hover > .portfolio__image {
@@ -383,17 +399,37 @@ portfolio
 team
 ------------------------------------------*/
 
+.dot__team {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: -201px;
+}
+
 .team {
   padding-top: 100px;
   padding-bottom: 120px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
+    ),
+    url(../images/bg4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
 .team__title {
-  font-weight: 700;
+  font-weight: 100;
   font-size: 36px;
   line-height: 40px;
   color: #fff;
   margin-bottom: 80px;
-  text-align: center;
 }
 .team__list {
   display: flex;
@@ -477,13 +513,32 @@ team
   font-size: 20px;
   font-weight: 900;
   color: var(--color-text-black);
-  background-color: var(--color-blue);
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 255, 255, 1) 0%,
+    rgba(0, 255, 240, 1) 40%,
+    rgba(0, 255, 240, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-attachment: scroll;
+  animation: portfoliobg-left 3s infinite alternate;
   width: 300px;
   margin-left: auto;
   padding: 15px 20px;
   text-align: right;
   border-radius: 0 5px 5px 0;
 }
+
+@keyframes portfoliobg-left {
+  0% {
+    background-position: -100% 0, center;
+  }
+  100% {
+    background-position: 0 0, center;
+  }
+}
+
 .team__item_right {
 }
 
@@ -517,11 +572,29 @@ team
   font-size: 20px;
   font-weight: 900;
   color: var(--color-text-black);
-  background-color: var(--color-blue);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 255, 240, 1) 0%,
+    rgb(255, 255, 255, 1) 50%,
+    rgb(255, 255, 255, 1) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 200% 100%;
+  background-attachment: scroll;
+  animation: portfoliobg-right 3s infinite alternate;
   width: 300px;
   padding: 15px 20px;
   text-align: left;
   border-radius: 5px 0 0 5px;
+}
+
+@keyframes portfoliobg-right {
+  0% {
+    background-position: 100% 0, center;
+  }
+  100% {
+    background-position: 0 0, center;
+  }
 }
 
 /*------------------------------------------ 
@@ -529,13 +602,23 @@ price
 ------------------------------------------*/
 
 .price {
-  background-color: #fff;
-  padding: 200px 0;
-  background-image: url(../images/bg3.jpg);
+  background-image: url(../images/bg3.png), url(../images/bg6.png);
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: right;
+  background-size: contain;
+  padding: 200px 0;
+  background-color: rgb(249, 249, 249);
+  animation: prise-animation 2s infinite alternate ease-in-out;
 }
+
+@keyframes prise-animation {
+  0% {
+    background-position: 85% -20px, right;
+  }
+  100% {
+    background-position: 85% 20px, right;
+  }
+}
+
 .price__paragraph {
   margin-bottom: 30px;
   max-width: 600px;
@@ -548,7 +631,7 @@ price
 
 .price__button {
   color: var(--color-text-black);
-  border: 3px solid var(--color-text-black);
+  border: 2px solid var(--color-text-black);
   font-weight: 700;
   font-size: 16px;
   line-height: 25px;
@@ -559,8 +642,8 @@ price
 }
 
 .price__button:hover {
-  border: 3px solid rgb(220, 220, 220);
-  background-color: rgb(220, 220, 220);
+  border: 2px solid var(--color-text-black);
+  background-color: rgb(240, 240, 240);
 }
 
 /*------------------------------------------ 
@@ -668,13 +751,13 @@ footer
   border: 0px solid orange;
   font-family: sans-serif;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 100;
   line-height: 1;
   color: #666;
   opacity: 0.5;
   text-decoration: none;
   margin: 10px 10px 0 0;
-  border: solid 3px #666;
+  border: solid 2px #666;
   border-radius: 100px;
   padding: 2px 7px 0 7px;
 }
@@ -715,7 +798,7 @@ footer
   text-decoration: none;
   color: #2c2c2c;
   background-color: #fff;
-  border: 3px solid #2c2c2c;
+  border: 2px solid #2c2c2c;
   font-weight: 700;
   text-transform: uppercase;
   padding: 15px 25px;
@@ -727,7 +810,7 @@ footer
 }
 
 .modal__button:hover {
-  background-color: rgb(210, 210, 210);
+  background-color: rgb(240, 240, 240);
 }
 
 .modal__image {
@@ -749,8 +832,8 @@ footer
   margin-bottom: 20px;
   padding: 5px 0 20px 30px;
   font-weight: 700;
-  background-color: rgb(226, 226, 226);
-  border-radius: 10px;
+  border: 2px rgb(226, 226, 226) solid;
+  border-radius: 5px;
 }
 
 .modal__list {
@@ -761,10 +844,12 @@ footer
 .modal__paragraph {
   padding: 20px 0 20px 50px;
   font-size: 22px;
+  font-weight: 100;
 }
 
 .modal__item_paragraph {
   padding: 20px 0;
+  font-weight: 100;
 }
 
 .modal__input {
