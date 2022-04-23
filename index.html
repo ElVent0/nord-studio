@@ -22,6 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- header -->
@@ -141,37 +142,37 @@
           <div class="about-us__content">
             <h2 class="about-us__title">В наші послуги входить:</h2>
             <ul class="about-us__list">
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="fade-up">
                 <svg width="70" height="70" class="about-us__icon">
                   <use href="./images/icons.svg#icon-paint"></use>
                 </svg>
                 Дизайн сайту
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="fade-up">
                 <svg width="70" height="70" class="about-us__icon">
                   <use href="./images/icons.svg#icon-display"></use>
                 </svg>
                 Розробка сайту
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="fade-up">
                 <svg width="70" height="70" class="about-us__icon">
                   <use href="./images/icons.svg#icon-equalizer"></use>
                 </svg>
                 SEO оптимізація
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="fade-up">
                 <svg width="70" height="70" class="about-us__icon">
                   <use href="./images/icons.svg#icon-folder"></use>
                 </svg>
                 Посадка на CMS
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="fade-up">
                 <svg width="70" height="70" class="about-us__icon">
                   <use href="./images/icons.svg#icon-hammer"></use>
                 </svg>
                 Обслуговування
               </li>
-              <li class="about-us__item">
+              <li class="about-us__item" data-aos="fade-up">
                 <svg width="70" height="70" class="about-us__icon">
                   <use href="./images/icons.svg#icon-tongue"></use>
                 </svg>
@@ -187,7 +188,7 @@
         <div class="container">
           <h2 class="portfolio__title">Портфоліо</h2>
           <ul class="portfolio__list">
-            <li class="portfolio__item">
+            <li class="portfolio__item" data-aos="fade-up">
               <a
                 href="https://elvent0.github.io/ChessClubFRECS/"
                 target="_blank"
@@ -201,7 +202,7 @@
                 <p class="portfolio__description">FRECS ChessClub</p>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item" data-aos="fade-up">
               <a
                 href="https://elvent0.github.io/2022/"
                 target="_blank"
@@ -215,7 +216,7 @@
                 <p class="portfolio__description">Ukraine</p>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item" data-aos="fade-up">
               <a
                 href="https://elvent0.github.io/KNUgle/"
                 target="_blank"
@@ -229,7 +230,7 @@
                 <p class="portfolio__description">KNUgle</p>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item" data-aos="fade-up">
               <a
                 href="https://elvent0.github.io/Practice/"
                 target="_blank"
@@ -243,7 +244,7 @@
                 <p class="portfolio__description">Practica V1.0</p>
               </a>
             </li>
-            <li class="portfolio__item">
+            <li class="portfolio__item" data-aos="fade-up">
               <a
                 href="https://elvent0.github.io/nordstudio/"
                 target="_blank"
@@ -266,7 +267,7 @@
         <div class="container">
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
-            <li class="team__item_left">
+            <li class="team__item_left" data-aos="fade-right">
               <div class="team__part_top">
                 <div class="team__developer team__developer_left">
                   <div>
@@ -292,7 +293,7 @@
                 <div class="team__percent_number">50%</div>
               </div>
             </li>
-            <li class="team__item_right">
+            <li class="team__item_right" data-aos="fade-left">
               <div class="team__part_top">
                 <div class="team__developer_image right">
                   <img
@@ -434,6 +435,9 @@
         </div>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
