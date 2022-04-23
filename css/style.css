@@ -80,12 +80,12 @@ header
 }
 
 .header__item {
-  margin-left: 0;
+  margin-right: 25px;
 }
 
 .header__item:first-child {
   display: flex;
-  margin-right: 40px;
+  margin-right: 35px;
 }
 
 .header__item:last-child {
@@ -100,6 +100,7 @@ header
   align-items: center;
   padding: 21px 0;
   transition: 0.3s;
+  margin: 0;
 }
 
 .header__paragraph {
@@ -293,49 +294,62 @@ about-us
 
 .about-us {
   background-color: rgb(249, 249, 249);
-  background-image: url(../images/bg2.png);
+  background-image: url(../images/bg2.png), url(../images/bg5-3.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain, 1200px;
+  background-position: left, right bottom -70px;
   height: calc(100vh - 101.58px);
   max-height: 950px;
 }
 
 .about-us__content {
-  padding-left: 60%;
-
-  padding-top: 80px;
+  max-width: 680px;
+  margin-left: auto;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 
 .about-us__title {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   color: var(--color-text-black);
   font-weight: 100;
-  font-size: 22px;
+  font-size: 36px;
+  line-height: 40px;
 }
 .about-us__list {
-  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20px;
 }
 .about-us__item {
-  margin-bottom: 15px;
-}
-
-.about-us__paragraph {
-  padding: 20px;
-  font-size: 14px;
-}
-
-.about-us__details {
-  user-select: none;
-  font-weight: 10px;
-  font-size: 14px;
-  max-width: 510px;
-}
-
-.about-us__summary {
-  padding: 20px;
-  border: 2px rgb(220, 220, 220) solid;
+  width: 200px;
+  height: 200px;
   border-radius: 5px;
+  padding: 40px 0 20px 0;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+
+  box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
+}
+
+.about-us__icon {
+  margin-bottom: 40px;
+  fill: var(--color-text-black);
+  transition: 0.3s;
+}
+
+.about-us__item:hover > .about-us__icon {
+  margin-bottom: 40px;
+  fill: #00d6c8;
+}
+
+.about-us__item:hover {
 }
 
 /*------------------------------------------
@@ -368,7 +382,7 @@ portfolio
   font-size: 36px;
   line-height: 40px;
   color: var(--color-text-black);
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .portfolio__list {
@@ -381,7 +395,7 @@ portfolio
   width: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-  box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -531,6 +545,7 @@ team
 .team__part_bottom {
   background-color: #fff;
   border-radius: 5px 5px 5px 5px;
+  overflow: hidden;
 }
 .team__percent {
   background-color: #fff;
@@ -542,13 +557,13 @@ team
   background-image: linear-gradient(
     to right,
     rgb(255, 255, 255, 1) 0%,
-    rgba(0, 255, 240, 1) 40%,
-    rgba(0, 255, 240, 1) 100%
+    rgba(0, 255, 240, 1) 50%,
+    rgb(255, 255, 255, 1) 100%
   );
   background-repeat: no-repeat;
-  background-size: 200% 100%;
+  background-size: 300% 100%;
   background-attachment: scroll;
-  animation: portfoliobg-left 2s infinite alternate;
+  animation: portfoliobg-left 2s infinite;
   width: 100%;
   margin-left: auto;
   padding: 15px 20px;
@@ -558,10 +573,10 @@ team
 
 @keyframes portfoliobg-left {
   0% {
-    background-position: -100% 0, center;
+    background-position: 150% 0, center;
   }
   100% {
-    background-position: 0 0, center;
+    background-position: -150% 0, center;
   }
 }
 
@@ -600,14 +615,14 @@ team
   color: var(--color-text-black);
   background-image: linear-gradient(
     to right,
-    rgba(0, 255, 240, 1) 0%,
-    rgb(255, 255, 255, 1) 50%,
+    rgb(255, 255, 255, 1) 0%,
+    rgba(0, 255, 240, 1) 50%,
     rgb(255, 255, 255, 1) 100%
   );
   background-repeat: no-repeat;
-  background-size: 200% 100%;
+  background-size: 300% 100%;
   background-attachment: scroll;
-  animation: portfoliobg-right 2s infinite alternate;
+  animation: portfoliobg-right 2s infinite 2.4s;
   width: 100%;
   padding: 15px 20px;
   text-align: left;
@@ -616,10 +631,10 @@ team
 
 @keyframes portfoliobg-right {
   0% {
-    background-position: 100% 0, center;
+    background-position: 150% 0, center;
   }
   100% {
-    background-position: 0 0, center;
+    background-position: -150% 0, center;
   }
 }
 
