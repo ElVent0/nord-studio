@@ -35,7 +35,7 @@ a {
 }
 
 .container {
-  max-width: 1430px;
+  max-width: 1230px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -183,7 +183,8 @@ hero
 .hero__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
+  top: 50px;
 }
 
 .hero__container_vertical {
@@ -194,7 +195,7 @@ hero
 }
 .hero__title {
   font-weight: 400;
-  font-size: 26px;
+  font-size: 22px;
   line-height: 40px;
   color: #fff;
   margin-bottom: 40px;
@@ -205,7 +206,7 @@ hero
 }
 
 .hero__paragraph {
-  font-size: 24px;
+  font-size: 20px;
   line-height: 29px;
   color: #fff;
   margin-bottom: 40px;
@@ -213,7 +214,7 @@ hero
 }
 
 .hero__paragraph:first-child {
-  font-size: 45px;
+  font-size: 43px;
   font-weight: 900;
   line-height: 29px;
   color: rgba(255, 255, 255, 0.3);
@@ -264,6 +265,7 @@ hero
 
 .hero__image {
   animation: hero-animation 2s infinite alternate ease-in-out;
+  margin-left: auto;
 }
 
 @keyframes hero-animation {
@@ -341,6 +343,17 @@ about-us
 portfolio
 ------------------------------------------*/
 
+.dot__portfolio {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  margin: -51px;
+}
+
 .portfolio {
   background-image: url(../images/bg5.png), url(../images/bg5-2.png);
   background-repeat: no-repeat;
@@ -362,16 +375,16 @@ portfolio
 .portfolio__list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -70px;
-  margin-bottom: -70px;
+  margin-left: -30px;
+  margin-bottom: -30px;
 }
 .portfolio__item {
-  width: calc(100% / 3 - 70px);
-  margin-left: 70px;
-  margin-bottom: 70px;
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
   box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -1px 11px 1px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 
@@ -409,16 +422,16 @@ team
   overflow: hidden;
   border: 0;
   padding: 0;
-  margin: -201px;
+  margin: -251px;
 }
 
 .team {
   padding-top: 100px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(44, 44, 44, 0.8),
+      rgba(44, 44, 44, 0.8)
     ),
     url(../images/bg4-2.jpg);
   background-repeat: no-repeat;
@@ -443,27 +456,27 @@ team
   display: flex;
   justify-content: space-between;
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   transition: 0.3s;
-  height: 300px;
-  overflow: hidden;
+  height: 270px;
   border-radius: 5px;
 }
 .team__developer {
   background-color: #fff;
-  height: 300px;
+  height: 270px;
   border-radius: 5px 0 0 5px;
   z-index: 1001;
   display: flex;
+  min-width: 300px;
   align-items: center;
 }
 .team__name {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 30px;
   font-weight: 700;
 }
 .team__skills {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .team__skills-item {
@@ -472,36 +485,48 @@ team
 
 .team__developer_left {
   text-align: right;
-  padding: 0 65px 0 105px;
+  padding: 0 40px 0 85px;
 }
 
 .team__developer_right {
   text-align: left;
-  padding: 0 105px 0 65px;
+  padding: 0 85px 0 40px;
   border-radius: 0 5px 5px 0;
+}
+
+.team__card_image {
 }
 
 .team__developer_image {
   transition: 0.3s;
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   overflow: hidden;
+}
+
+.team__developer_image.left {
+  border-radius: 0 5px 5px 0;
+}
+
+.team__developer_image.right {
+  border-radius: 5px 0 0 5px;
 }
 
 .team_image {
-  overflow: hidden;
 }
 
-.team__part_top:hover > .team__developer_image {
+.team__part_top:hover > .team__developer_image > .team__image {
   transform: scale(1.7);
 }
 
 .team__image_left {
   border-radius: 0 5px 5px 0;
+  transition: 0.3s;
 }
 
 .team__image.team__image_rigth {
   border-radius: 5px 0 0 5px;
+  transition: 0.3s;
 }
 
 .team__part_bottom {
@@ -524,8 +549,8 @@ team
   background-repeat: no-repeat;
   background-size: 200% 100%;
   background-attachment: scroll;
-  animation: portfoliobg-left 3s infinite alternate;
-  width: 300px;
+  animation: portfoliobg-left 2s infinite alternate;
+  width: 100%;
   margin-left: auto;
   padding: 15px 20px;
   text-align: right;
@@ -555,11 +580,11 @@ team
 }
 
 .dot__left {
-  left: 49.3%;
+  left: 49.1%;
 }
 
 .dot__right {
-  left: 50.7%;
+  left: 50.4%;
 }
 
 .team__item_left:hover ~ .dot__left {
@@ -583,8 +608,8 @@ team
   background-repeat: no-repeat;
   background-size: 200% 100%;
   background-attachment: scroll;
-  animation: portfoliobg-right 3s infinite alternate;
-  width: 300px;
+  animation: portfoliobg-right 2s infinite alternate;
+  width: 100%;
   padding: 15px 20px;
   text-align: left;
   border-radius: 5px 0 0 5px;
@@ -614,10 +639,10 @@ price
 
 @keyframes prise-animation {
   0% {
-    background-position: 85% -20px, right;
+    background-position: 80% -20px, right;
   }
   100% {
-    background-position: 85% 20px, right;
+    background-position: 80% 20px, right;
   }
 }
 
