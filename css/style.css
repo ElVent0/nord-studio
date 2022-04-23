@@ -154,6 +154,7 @@ hero
   background-color: var(--color-bg);
   padding-top: 99.57px;
   height: 100vh;
+  max-height: 950px;
 }
 
 .hero__background {
@@ -293,8 +294,9 @@ about-us
   background-color: rgb(249, 249, 249);
   background-image: url(../images/bg2.png);
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: contain;
   height: calc(100vh - 101.58px);
+  max-height: 950px;
 }
 
 .about-us__content {
@@ -415,10 +417,10 @@ team
   padding-bottom: 120px;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.1),
-      rgba(0, 0, 0, 0.1)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
-    url(../images/bg4.jpg);
+    url(../images/bg4-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
