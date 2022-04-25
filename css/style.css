@@ -824,6 +824,7 @@ footer
   border: none;
   border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
   padding-left: 10px;
+  margin-top: 10px;
 }
 .modal__button_send {
   border: 2px var(--color-text-black) solid;
@@ -839,8 +840,4 @@ footer
 
 .modal__button_send:hover {
   background-color: rgb(240, 240, 240);
-}
-
-label {
-  display: block;
 }

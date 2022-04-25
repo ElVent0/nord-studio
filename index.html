@@ -349,47 +349,48 @@
             >
               <ul class="modal__list">
                 <li class="modal__item">
-                  <label class="modal__item_paragraph">Ваше ПІБ:</label>
-                  <input
-                    class="modal__input"
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    oninvalid="this.setCustomValidity('Заповни це поле, баран')"
-                    minlength="4"
-                    maxlength="40"
-                    size="30"
-                  />
+                  <label class="modal__item_paragraph"
+                    >Ваше ПІБ:
+                    <input
+                      class="modal__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      oninvalid="this.setCustomValidity('Заповни це поле, баран')"
+                      minlength="4"
+                      maxlength="40"
+                      size="30"
+                      autofocus
+                    />
+                  </label>
                 </li>
                 <li class="modal__item">
                   <label class="modal__item_paragraph"
-                    >Ваша електронна адреса:</label
-                  >
-                  <input
-                    class="modal__input"
-                    type="email"
-                    id="email"
-                    size="30"
-                    required
-                    name="mail"
-                    oninvalid="this.setCustomValidity('Заповни це поле, баран')"
-                  />
+                    >Ваша електронна адреса:
+                    <input
+                      class="modal__input"
+                      type="email"
+                      id="email"
+                      size="30"
+                      required
+                      name="mail"
+                      oninvalid="this.setCustomValidity('Заповни це поле, баран')"
+                  /></label>
                 </li>
                 <li class="modal__item">
                   <label class="modal__item_paragraph"
-                    >Кількість сторінок сайту:</label
-                  >
-                  <input
-                    class="modal__input"
-                    type="number"
-                    step="1"
-                    min="1"
-                    max="10"
-                    value="1"
-                    id="pages"
-                    name="pages"
-                  />
+                    >Кількість сторінок сайту:
+                    <input
+                      class="modal__input"
+                      type="number"
+                      step="1"
+                      min="1"
+                      max="10"
+                      value="1"
+                      id="pages"
+                      name="pages"
+                  /></label>
                 </li>
                 <li class="modal__item">
                   <label class="modal__item_paragraph">Тип сайту:</label>
