@@ -1,7 +1,7 @@
 :root {
   --color-blue: #00fff0;
   --color-bg: #2c2c2c;
-  --color-text-black: #545454;
+  --color-text-black: #707070;
 }
 
 /*------------------------------------------ 
@@ -486,6 +486,7 @@ team
   display: flex;
   min-width: 300px;
   align-items: center;
+  color: var(--color-text-black);
 }
 .team__name {
   font-size: 20px;
@@ -652,10 +653,10 @@ price
   background-size: contain;
   padding: 200px 0;
   background-color: rgb(249, 249, 249);
-  animation: prise-animation 2s infinite alternate ease-in-out;
+  animation: price-animation 2s infinite alternate ease-in-out;
 }
 
-@keyframes prise-animation {
+@keyframes price-animation {
   0% {
     background-position: 80% -20px, right;
   }
@@ -668,6 +669,7 @@ price
   margin-bottom: 30px;
   max-width: 600px;
   font-size: 20px;
+  color: var(--color-text-black);
 }
 
 .price__paragraph_end {
