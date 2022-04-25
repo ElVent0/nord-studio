@@ -100,7 +100,10 @@
               <a href="#price" class="hero__button button__left"
                 >ЗАМОВИТИ ПОСЛУГУ</a
               >
-              <a href="#openModal-gu" class="hero__button button__right"
+              <a
+                href="#openModal-gu"
+                class="hero__button button__right"
+                data-modal-open
                 >СЛАВА УКРАЇНІ</a
               >
             </div>
@@ -112,26 +115,21 @@
             width="500"
           />
         </div>
-        <div id="openModal-gu" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content top">
-              <div class="modal-body modal-body__top">
-                <img
-                  src="./images/vg.jpg"
-                  width="90%"
-                  alt="Героям Слава!"
-                  class="modal__image"
-                />
-                <a
-                  type="submit"
-                  class="modal__button"
-                  href="#close"
-                  title="Поставте 100 балів"
-                  class="close"
-                  >Героям Слава!</a
-                ><br />
-              </div>
-            </div>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <img
+              src="./images/vg.jpg"
+              width="90%"
+              alt="Героям Слава!"
+              class="modal__image"
+            />
+            <a
+              class="modal__button_gs"
+              data-modal-close
+              title="Поставте 100 балів"
+              class="modal-close"
+              >Героям Слава!</a
+            ><br />
           </div>
         </div>
       </section>
@@ -204,7 +202,7 @@
             </li>
             <li class="portfolio__item" data-aos="fade-up">
               <a
-                href="https://elvent0.github.io/2022/"
+                href="https://elvent0.github.io/Nike/"
                 target="_blank"
                 class="portfolio__link"
               >
@@ -213,7 +211,7 @@
                   alt="Сайт про Україну"
                   class="portfolio__image"
                 />
-                <p class="portfolio__description">Ukraine</p>
+                <p class="portfolio__description">Nike</p>
               </a>
             </li>
             <li class="portfolio__item" data-aos="fade-up">
@@ -334,78 +332,70 @@
           <p class="price__paragraph price__paragraph_end">
             Наш поштовий бот <span class="blue">VIKING</span> працює цілодобово
           </p>
-          <a href="#openModal" class="price__button">ЗАПОВНИТИ БРИФ</a>
+          <a href="#openModal" class="price__button" data-modal-open-2
+            >ЗАПОВНИТИ БРИФ</a
+          >
         </div>
-        <div id="openModal" class="modal">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-body modal-body__bottom">
-                <a href="#close" title="Close" class="close">×</a>
-                <p style="margin-top: 40px" class="modal__paragraph">
-                  <b
-                    >Надайте наступну інформацію для розрахунку<br />
-                    вартості</b
-                  ><br />
-                </p>
-                <form action="">
-                  <ul class="modal__list">
-                    <li class="modal__item">
-                      <p class="modal__item_paragraph">Ваше ПІБ:</p>
-                      <input
-                        class="modal__input"
-                        type="text"
-                        id="name"
-                        name="name"
-                        required
-                        oninvalid="this.setCustomValidity('Заповни це поле, баран')"
-                        minlength="4"
-                        maxlength="40"
-                        size="30"
-                      />
-                    </li>
-                    <li class="modal__item">
-                      <p class="modal__item_paragraph">
-                        Ваша електронна адреса:
-                      </p>
-                      <input
-                        class="modal__input"
-                        type="email"
-                        id="email"
-                        size="30"
-                        required
-                        oninvalid="this.setCustomValidity('Заповни це поле, баран')"
-                      />
-                    </li>
-                    <li class="modal__item">
-                      <p class="modal__item_paragraph">
-                        Кількість сторінок сайту:
-                      </p>
-                      <input
-                        class="modal__input"
-                        type="number"
-                        step="1"
-                        min="1"
-                        max="10"
-                        value="1"
-                        id="pages"
-                        name="pages"
-                      />
-                    </li>
-                    <li class="modal__item">
-                      <p class="modal__item_paragraph">Тип сайту:</p>
-                      <select name="" id="" class="modal__input">
-                        <option value="">Шаблонний</option>
-                        <option value="">Персоналізований</option>
-                      </select>
-                    </li>
-                  </ul>
+        <div class="backdrop is-hidden" data-modal-2>
+          <div class="modal__bottom">
+            <button type="button" class="modal__button" data-modal-close-2>
+              <svg width="20" height="20" class="modal__close">
+                <use href="./images/icons.svg#close" class="modal__use"></use>
+              </svg>
+            </button>
+            <form action="">
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <p class="modal__item_paragraph">Ваше ПІБ:</p>
+                  <input
+                    class="modal__input"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    oninvalid="this.setCustomValidity('Заповни це поле, баран')"
+                    minlength="4"
+                    maxlength="40"
+                    size="30"
+                  />
+                </li>
+                <li class="modal__item">
+                  <p class="modal__item_paragraph">Ваша електронна адреса:</p>
+                  <input
+                    class="modal__input"
+                    type="email"
+                    id="email"
+                    size="30"
+                    required
+                    oninvalid="this.setCustomValidity('Заповни це поле, баран')"
+                  />
+                </li>
+                <li class="modal__item">
+                  <p class="modal__item_paragraph">Кількість сторінок сайту:</p>
+                  <input
+                    class="modal__input"
+                    type="number"
+                    step="1"
+                    min="1"
+                    max="10"
+                    value="1"
+                    id="pages"
+                    name="pages"
+                  />
+                </li>
+                <li class="modal__item">
+                  <p class="modal__item_paragraph">Тип сайту:</p>
+                  <select name="" id="" class="modal__input">
+                    <option value="">Шаблонний</option>
+                    <option value="">Персоналізований</option>
+                  </select>
+                </li>
+              </ul>
 
-                  <button type="submit" class="modal__button">
-                    Надіслати дані
-                  </button>
-                </form>
-              </div>
-            </div>
+              <button type="submit" class="modal__button_send">
+                Надіслати дані
+              </button>
+            </form>
           </div>
         </div>
       </section>
@@ -439,5 +429,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./modal.js"></script>
+    <script src="./modal2.js"></script>
   </body>
 </html>
