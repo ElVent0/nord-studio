@@ -838,3 +838,7 @@ footer
 .modal__button_send:hover {
   background-color: rgb(240, 240, 240);
 }
+
+label {
+  display: block;
+}

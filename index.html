@@ -343,10 +343,13 @@
                 <use href="./images/icons.svg#close" class="modal__use"></use>
               </svg>
             </button>
-            <form action="">
+            <form
+              action="тут буде лінк на прогу, що обробляє відправку форми"
+              method="POST"
+            >
               <ul class="modal__list">
                 <li class="modal__item">
-                  <p class="modal__item_paragraph">Ваше ПІБ:</p>
+                  <label class="modal__item_paragraph">Ваше ПІБ:</label>
                   <input
                     class="modal__input"
                     type="text"
@@ -360,18 +363,23 @@
                   />
                 </li>
                 <li class="modal__item">
-                  <p class="modal__item_paragraph">Ваша електронна адреса:</p>
+                  <label class="modal__item_paragraph"
+                    >Ваша електронна адреса:</label
+                  >
                   <input
                     class="modal__input"
                     type="email"
                     id="email"
                     size="30"
                     required
+                    name="mail"
                     oninvalid="this.setCustomValidity('Заповни це поле, баран')"
                   />
                 </li>
                 <li class="modal__item">
-                  <p class="modal__item_paragraph">Кількість сторінок сайту:</p>
+                  <label class="modal__item_paragraph"
+                    >Кількість сторінок сайту:</label
+                  >
                   <input
                     class="modal__input"
                     type="number"
@@ -384,8 +392,8 @@
                   />
                 </li>
                 <li class="modal__item">
-                  <p class="modal__item_paragraph">Тип сайту:</p>
-                  <select name="" id="" class="modal__input">
+                  <label class="modal__item_paragraph">Тип сайту:</label>
+                  <select name="type" id="" class="modal__input">
                     <option value="">Шаблонний</option>
                     <option value="">Персоналізований</option>
                   </select>
