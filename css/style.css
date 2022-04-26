@@ -44,7 +44,8 @@ a {
   color: var(--color-blue);
 }
 
-input {
+input,
+select {
   outline: none;
 }
 
@@ -533,10 +534,12 @@ team
 .team_image {
 }
 
-.team__part_top:hover > .team__developer_image > .team__image {
+.team__part_top:hover .team__image_left {
   transform: scale(1.7);
 }
-
+.team__part_top:hover .team__image_rigth {
+  transform: scale(1.4) translateY(50px);
+}
 .team__image_left {
   border-radius: 0 5px 5px 0;
   transition: 0.3s;
@@ -757,7 +760,7 @@ footer
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: 700px;
   padding: 20px 20px;
   background-color: #fff;
   border-radius: 5px;
@@ -818,24 +821,47 @@ footer
   margin-bottom: 40px;
 }
 .modal__item_paragraph {
-  margin-bottom: 20px;
+}
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
 }
 .modal__input {
+  width: 100%;
   border: none;
   border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
   padding-left: 10px;
+  padding-top: 5px;
   margin-top: 10px;
 }
 .modal__button_send {
-  border: 2px var(--color-text-black) solid;
+  border: 1px var(--color-text-black) solid;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 7px 15px;
   border-radius: 50px;
   display: block;
   max-width: 180px;
-  margin: 0 auto;
+  margin-right: 20px;
   text-align: center;
   background-color: #fff;
+}
+
+.modal__button_reset {
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 50px;
+  display: block;
+  max-width: 180px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal__button_send:last-child {
+  margin-right: 0;
 }
 
 .modal__button_send:hover {

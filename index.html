@@ -296,7 +296,7 @@
                 <div class="team__developer_image right">
                   <img
                     src="./images/p2.png"
-                    alt="Тарасюк Василь"
+                    alt="Середюк Павло"
                     class="team__image team__image_rigth"
                     width="270"
                   />
@@ -358,7 +358,7 @@
                       name="name"
                       required
                       oninvalid="this.setCustomValidity('Заповни це поле, баран')"
-                      minlength="4"
+                      minlength="3"
                       maxlength="40"
                       size="30"
                       autofocus
@@ -400,10 +400,14 @@
                   </select>
                 </li>
               </ul>
-
-              <button type="submit" class="modal__button_send">
-                Надіслати дані
-              </button>
+              <div class="modal__buttons">
+                <button type="submit" class="modal__button_send">
+                  Надіслати дані
+                </button>
+                <button type="reset" class="modal__button_reset">
+                  Скинути
+                </button>
+              </div>
             </form>
           </div>
         </div>
