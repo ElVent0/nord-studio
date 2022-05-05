@@ -538,7 +538,7 @@ team
   transform: scale(1.7);
 }
 .team__part_top:hover .team__image_rigth {
-  transform: scale(1.4) translateY(50px);
+  transform: scale(1.4) translateY(30px);
 }
 .team__image_left {
   border-radius: 0 5px 5px 0;
