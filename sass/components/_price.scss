@@ -1,0 +1,45 @@
+.price {
+  background-image: url(../images/bg3.png), url(../images/bg6.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 200px 0;
+  background-color: rgb(249, 249, 249);
+  animation: price-animation 2s infinite alternate ease-in-out;
+}
+
+@keyframes price-animation {
+  0% {
+    background-position: 80% -20px, right;
+  }
+  100% {
+    background-position: 80% 20px, right;
+  }
+}
+
+.price__paragraph {
+  margin-bottom: 30px;
+  max-width: 600px;
+  font-size: 20px;
+  color: var(--color-text-black);
+}
+
+.price__paragraph_end {
+  margin-bottom: 60px;
+}
+
+.price__button {
+  color: var(--color-text-black);
+  border: 2px solid var(--color-text-black);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  padding: 12px 40px 10px 40px;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.price__button:hover {
+  border: 2px solid var(--color-text-black);
+  background-color: rgb(240, 240, 240);
+}

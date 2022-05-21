@@ -1,0 +1,42 @@
+.footer {
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+}
+
+.footer__logo {
+  padding: 20px 0;
+}
+
+.footer__paragraph {
+  color: #b5b5b5;
+  font-size: 14px;
+  margin-left: 40px;
+  max-width: 350px;
+}
+
+.footer__contacts_center {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link {
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer__link:first-child {
+  margin-bottom: 15px;
+}
+
+.footer__link:hover {
+  color: rgb(220, 220, 220);
+}

@@ -1,0 +1,133 @@
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.3;
+  z-index: 2000;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  padding: 20px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.modal__image_bottom {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -7%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2000;
+  pointer-events: none;
+}
+
+.modal__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal__image {
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.modal__button_gs {
+  border: 2px var(--color-text-black) solid;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: block;
+  max-width: 180px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.modal__button_gs:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+/* modal-bottom-content */
+
+.modal__bottom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.modal__item {
+  margin-bottom: 40px;
+}
+.modal__item_paragraph {
+}
+.modal__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.modal__input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px rgba(0, 0, 0, 0.4) solid;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 10px;
+}
+.modal__button_send {
+  border: 1px var(--color-text-black) solid;
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 50px;
+  display: block;
+  max-width: 180px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal__button_reset {
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 7px 15px;
+  border-radius: 50px;
+  display: block;
+  max-width: 180px;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.modal__button_send:last-child {
+  margin-right: 0;
+}
+
+.modal__button_send:hover {
+  background-color: rgb(240, 240, 240);
+}

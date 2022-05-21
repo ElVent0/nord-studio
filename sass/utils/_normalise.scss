@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: var(--color-bg);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+input,
+select {
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px #222 (34, 60, 80, 0.2) inset;
+  background-color: #2c2c2c;
+  border-radius: 0px;
+  margin-top: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: var(--color-blue);
+}
+
+.dot {
+  background-color: #fff;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  margin-top: 11%;
+  position: absolute;
+  margin-top: 160px;
+}
+
+.dot__left {
+  left: 49.1%;
+}
+
+.dot__right {
+  left: 50.4%;
+}
