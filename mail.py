@@ -18,4 +18,4 @@ def send_mail(sender, reciever):
     server.quit()                               
 
 if __name__ == '__main__':
-    send_mail('nordstudiofrecs@gmail.com', 'vasyl_tarasyuk@knu.ua')
+    send_mail('nordstudiofrecs@gmail.com', 'mail')
