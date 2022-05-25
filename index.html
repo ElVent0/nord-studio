@@ -325,6 +325,7 @@
           </p>
           <a href="#openModal" class="price__button">ЗАПОВНИТИ БРИФ</a>
         </div>
+<<<<<<< Updated upstream
         <div id="openModal" class="modal">
           <div class="modal-dialog ">
             <div class="modal-content ">
@@ -360,6 +361,65 @@
               <li class="modal__item">
                 <p class="modal__item_paragraph">Кількість сторінок сайту:</p>
                 <input class="modal__input" type="number" step="1" min="1" max="10" value="1" id="pages" name="pages"/>
+=======
+        <div class="backdrop is-hidden" data-modal-2>
+          
+          <div class="modal__bottom ">
+            <img src="./images/modal.png" width="80" class="modal__image_bottom">
+            <button type="button" class="modal__button" data-modal-close-2>
+              <svg width="20" height="20" class="modal__close">
+                <use href="./images/icons.svg#close" class="modal__use"></use>
+              </svg>
+            </button>
+            <form
+              action="./mail.py"
+              method="POST"
+            >
+              <ul class="modal__list">
+                <li class="modal__item">
+                  <label class="modal__item_paragraph"
+                    >Ваше ПІБ:
+                    <input
+                      class="modal__input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      oninvalid="this.setCustomValidity('Заповни це поле, баран')"
+                      minlength="3"
+                      maxlength="40"
+                      size="30"
+                      autofocus
+                    />
+                  </label>
+                </li>
+                <li class="modal__item">
+                  <label class="modal__item_paragraph"
+                    >Ваша електронна адреса:
+                    <input
+                      class="modal__input"
+                      type="email"
+                      id="email"
+                      size="30"
+                      required
+                      name="mail"
+                      oninvalid="this.setCustomValidity('Заповни це поле, баран')"
+                  /></label>
+                </li>
+                <li class="modal__item">
+                  <label class="modal__item_paragraph"
+                    >Кількість сторінок сайту:
+                    <input
+                      class="modal__input"
+                      type="number"
+                      step="1"
+                      min="1"
+                      max="10"
+                      value="1"
+                      id="pages"
+                      name="pages"
+                  /></label>
+>>>>>>> Stashed changes
                 </li>
                 <li class="modal__item">
                 <p class="modal__item_paragraph">Тип сайту:</p>
