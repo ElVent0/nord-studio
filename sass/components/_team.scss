@@ -21,6 +21,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
 }
 
 .team__title {
@@ -89,9 +92,6 @@
   border-radius: 0 5px 5px 0;
 }
 
-.team__card_image {
-}
-
 .team__developer_image {
   transition: 0.3s;
   width: 270px;
@@ -105,9 +105,6 @@
 
 .team__developer_image.right {
   border-radius: 5px 0 0 5px;
-}
-
-.team_image {
 }
 
 .team__part_top:hover .team__image_left {
@@ -162,9 +159,6 @@
   100% {
     background-position: -150% 0, center;
   }
-}
-
-.team__item_right {
 }
 
 .team__item_left:hover ~ .dot__left {

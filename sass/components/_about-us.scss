@@ -11,12 +11,15 @@
 
 .about-us {
   background-color: rgb(249, 249, 249);
-  background-image: url(../images/bg2.png), url(../images/bg5-3.png);
+  background-image: url(../images/bg5-3.png), url(../images/bg2.png);
   background-repeat: no-repeat;
-  background-size: contain, 1200px;
-  background-position: left, right bottom -70px;
+  background-size: 1200px, 50%;
+  background-position: right bottom -70px, left;
   height: calc(100vh - 101.58px);
   max-height: 950px;
+  @media screen and (max-width: 1400px) {
+    display: none;
+  }
 }
 
 .about-us__content {
