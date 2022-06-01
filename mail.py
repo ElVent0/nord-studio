@@ -8,7 +8,7 @@ def send_mail(sender, reciever):
     msg['From'] = sender        
     msg['To'] = reciever        
     msg['Subject'] = "NordStudio"    
-    msg.attach(MIMEText('Вітаю Вас, Василь!'))
+    msg.attach(MIMEText('Вітаю Вас, "name"! '))
 
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()                           
