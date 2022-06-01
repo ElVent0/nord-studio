@@ -1,0 +1,37 @@
+.mobile__backdrop {
+  @media screen and (min-width: 1400px) {
+    display: none;
+  }
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mobile__content {
+  width: 90%;
+}
+.mobile__image {
+  max-width: 50%;
+  margin-bottom: 60px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+.mobile__text {
+  color: var(--color-bg);
+  text-align: center;
+  &--first {
+    padding-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &--second {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  &--border {
+    border-bottom: 1px var(--color-text-black) solid;
+  }
+}
